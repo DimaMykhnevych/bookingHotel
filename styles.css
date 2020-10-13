@@ -1,0 +1,62 @@
+* {
+  /* border: 1px solid red; */
+}
+.navbar {
+  background-color: antiquewhite;
+}
+.header {
+  background-color: antiquewhite;
+  margin-bottom: 3em;
+}
+.heading-section button[type='button'] {
+  background-color: coral;
+  color: #fff;
+}
+.heading-section {
+  background-color: antiquewhite;
+  padding: 0;
+}
+.carousel {
+  width: 100%;
+}
+.carousel .carousel-inner .carousel-item img {
+  width: 100%;
+  border: 1px solid brown;
+}
+.description {
+  width: 50%;
+  padding: 1em;
+  border: 1px solid brown;
+}
+.description p {
+  font-size: 1rem;
+}
+.main {
+  background-color: lavenderblush;
+}
+.reasons-section .reasons-block {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+.reasons-section .reasons-block li {
+  width: 18%;
+  text-align: center;
+}
+.reasons-section .block-title {
+  font-size: 1.5em;
+}
+.hotels-main {
+  background-color: rgb(65, 63, 63);
+  background-image: url('images/space-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hotels-main .descr {
+  color: #fff;
+}
+.card-body {
+  height: 300px;
+  overflow: auto;
+}
