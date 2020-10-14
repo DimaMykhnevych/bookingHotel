@@ -4,14 +4,22 @@
 .navbar {
   background-color: antiquewhite;
 }
+.navbar-brand h3 {
+  font-family: 'Piedra', cursive;
+  font-size: 1.5em;
+  color: rgb(18, 76, 78);
+}
 .header {
   background-color: antiquewhite;
   margin-bottom: 3em;
 }
-.heading-section button[type='button'] {
-  background-color: coral;
-  color: #fff;
+.header .navbar-nav .nav-item:hover {
+  background-color: rgb(248, 210, 160);
 }
+.header .navbar-nav .nav-item {
+  font-family: 'Roboto', sans-serif;
+}
+
 .heading-section {
   background-color: antiquewhite;
   padding: 0;
@@ -30,6 +38,7 @@
 }
 .description p {
   font-size: 1rem;
+  font-family: 'Sansita Swashed', cursive;
 }
 .main {
   background-color: lavenderblush;
@@ -46,6 +55,10 @@
 }
 .reasons-section .block-title {
   font-size: 1.5em;
+  font-family: 'Roboto', sans-serif;
+}
+.descr h2 {
+  font-family: 'Playfair Display', serif;
 }
 .hotels-main {
   background-color: rgb(65, 63, 63);
@@ -57,6 +70,44 @@
   color: #fff;
 }
 .card-body {
-  height: 300px;
+  height: 320px;
   overflow: auto;
+}
+.footer {
+  background-color: aliceblue;
+}
+.footer-links a:hover {
+  cursor: pointer;
+}
+.booking-rooms-wrap .heading {
+  font-family: 'Playfair Display', serif;
+}
+.booking-rooms-wrap img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.booking-rooms-wrap .rooms-table tbody tr:hover {
+  cursor: pointer;
+  background-color: floralwhite;
+}
+.booking-rooms-wrap button {
+  width: 220px;
+  padding-left: 50px;
+}
+#carouselId2 {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+.form button {
+  width: 150px;
+  padding-right: 100px;
+}
+.form .submit {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
 }
