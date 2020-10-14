@@ -82,11 +82,30 @@
 .booking-rooms-wrap .heading {
   font-family: 'Playfair Display', serif;
 }
+.choosed-hotel-image {
+  width: 100%;
+}
+.img-wrapper {
+  width: 45%;
+  float: right;
+  background-color: floralwhite;
+}
+.img-wrapper .text-wrap {
+  display: flex;
+  justify-content: center;
+  font-size: 0.98em;
+}
 .booking-rooms-wrap img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+}
+
+.map {
   width: 50%;
+  margin: 0;
+}
+.map iframe {
+  width: 100%;
 }
 .booking-rooms-wrap .rooms-table tbody tr:hover {
   cursor: pointer;
@@ -110,4 +129,67 @@
   display: flex;
   justify-content: center;
   margin-bottom: 1em;
+}
+
+.widget .panel-body {
+  padding: 0px;
+}
+.widget .list-group {
+  margin-bottom: 0;
+}
+.widget .panel-title {
+  display: inline;
+}
+.widget .label-info {
+  float: right;
+}
+.widget li.list-group-item {
+  border-radius: 0;
+  border: 0;
+  border-top: 1px solid #ddd;
+}
+.widget li.list-group-item:hover {
+  background-color: rgba(86, 61, 124, 0.1);
+}
+.widget .mic-info {
+  color: #666666;
+  font-size: 11px;
+}
+.widget .action {
+  margin-top: 5px;
+}
+.widget .comment-text {
+  font-size: 12px;
+}
+.widget .btn-block {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+#accordion {
+  font-family: 'Roboto', sans-serif;
+  color: darkblue;
+}
+.faq {
+  background-color: ivory;
+}
+.faq-wrap .card {
+  background-color: honeydew;
+}
+.faq-wrap h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 1em;
+  color: darkcyan;
+}
+.about-us-wrapper {
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+.about-us-wrapper .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8em;
+  background-color: rgba(86, 61, 124, 0.6);
 }

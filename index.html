@@ -51,13 +51,13 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">FAQ</a>
+              <a class="nav-link active" href="#faq">FAQ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">About us</a>
+              <a class="nav-link active" href="#about">About us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Contact</a>
+              <a class="nav-link active" href="#footer">Contact</a>
             </li>
           </ul>
           <button type="button" class="btn btn-dark ml-auto">Log in</button>
@@ -294,8 +294,37 @@
           <h2 id="choose-hotel-name">Armani hotel</h2>
         </div>
         <div calss="choosed-hotel-image">
-          <img src="images/card5.jpg" class="shadow" id="choosed-hotel-image" />
+          <div class="img-wrapper">
+            <img
+              src="images/card5.jpg"
+              class="shadow mb-1"
+              id="choosed-hotel-image"
+            />
+            <h4 id="choosedHotelName" class="text-center"></h4>
+            <div class="text-wrap">
+              <p class="text-center w-75">
+                You can search the location of hotel by google map, that located
+                left from this text. You can shrink this map, and move it by
+                mouse. Here you can see not only location of hotel, but shops
+                and restaurants.
+              </p>
+            </div>
+          </div>
+
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2523.456241150132!2d55.27376258587374!3d25.19745180157444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f4281c76a9d87%3A0xeb5cdbd2a322d9c5!2sArmani%20Hotel%20Dubai!5e0!3m2!1sru!2sua!4v1602686687325!5m2!1sru!2sua"
+              width="600"
+              height="450"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+            ></iframe>
+          </div>
         </div>
+
         <div class="rooms-table mt-5">
           <table class="table">
             <thead>
@@ -441,36 +470,276 @@
                 ></textarea>
               </div>
               <div class="submit">
-                <button id="submit" type="button" class="btn btn-primary">
+                <button id="submit" type="button" class="btn btn-danger">
                   Submit
                 </button>
               </div>
-              <div class="d-flex justify-content-center mb-1">
+              <div
+                class="d-lg-none d-md-none d-sm-none d-none spinn d-flex justify-content-center mb-1"
+              >
                 <div class="spinner-border text-danger" role="status"></div>
               </div>
-              <div class="message jumbotron">
+              <div
+                class="d-lg-none d-md-none d-sm-none d-none message jumbotron"
+              >
                 <h3>Congratulation!</h3>
                 <p>
                   Room reservation was successful. A receipt has been sent to
                   your mail! Thank you for using our room reservation service!
-                  <p>We are looking for you,</p>
-                  <p>Best regards,</p>
-                  <p>Hotels.com</p> 
                 </p>
+                <p>We are looking for you,</p>
+                <p>Best regards,</p>
+                <p>Hotels.com</p>
               </div>
             </form>
           </div>
         </div>
         <button
           type="button"
-          class="btn btn-warning d-flex align-self-center"
+          class="btn btn-warning d-flex align-self-center mb-5"
           id="backToHotels"
         >
           Back to the hotels
         </button>
+        <div class="comments">
+          <div class="container">
+            <div class="row">
+              <div class="panel panel-default widget">
+                <div class="panel-heading">
+                  <span class="glyphicon glyphicon-comment"></span>
+                  <h3 class="panel-title">Recent Comments</h3>
+                  <span class="label label-info"> 78</span>
+                </div>
+                <div class="panel-body">
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                      <div class="row">
+                        <div class="col-xs-2 col-md-1">
+                          <img
+                            src="images/user1.webp"
+                            class="img-circle img-responsive"
+                            alt=""
+                          />
+                        </div>
+                        <div class="col-xs-10 col-md-11">
+                          <div>
+                            <a href="#"> Awesome Hotel</a>
+                            <div class="mic-info">
+                              By: <a href="#">Bhaumik Patel</a> on 19 Oct 2020
+                            </div>
+                          </div>
+                          <div class="comment-text">Awesome design</div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="row">
+                        <div class="col-xs-2 col-md-1">
+                          <img
+                            src="images/user2.jpg"
+                            class="img-circle img-responsive"
+                            alt=""
+                          />
+                        </div>
+                        <div class="col-xs-10 col-md-11">
+                          <div>
+                            <a href="#">View is beaytiful!!</a>
+                            <div class="mic-info">
+                              By: <a href="#">Dima Mykh</a> on 12 Oct 2020
+                            </div>
+                          </div>
+                          <div class="comment-text">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut
+                            laoreet dolore magna aliquam erat volutpat. Ut wisi
+                            enim
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="row">
+                        <div class="col-xs-2 col-md-1">
+                          <img
+                            src="images/user3.jpg"
+                            class="img-circle img-responsive"
+                            alt=""
+                          />
+                        </div>
+                        <div class="col-xs-10 col-md-11">
+                          <div>
+                            <a href="#">Cool Staff</a>
+                            <div class="mic-info">
+                              By: <a href="#">Vlad Fliahin</a> on 11 Oct 2020
+                            </div>
+                          </div>
+                          <div class="comment-text">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut
+                            laoreet dolore magna aliquam erat volutpat. Ut wisi
+                            enim
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <a
+                    href="#"
+                    class="btn btn-primary btn-sm btn-block"
+                    role="button"
+                    ><span class="glyphicon glyphicon-refresh"></span> More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <footer class="footer d-flex align-items-center flex-column">
+    <div id="faq" class="faq d-flex align-items-center flex-column mb-4">
+      <div class="faq-wrap col-lg-9">
+        <h2>Here you can find some answers on frequently asked questions</h2>
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-link"
+                  data-toggle="collapse"
+                  data-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  How can I pay for my room?
+                </button>
+              </h5>
+            </div>
+
+            <div
+              id="collapseOne"
+              class="collapse show"
+              aria-labelledby="headingOne"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life
+                accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                non cupidatat skateboard dolor brunch. Food truck quinoa
+                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                excepteur butcher vice lomo. Leggings occaecat craft beer
+                farm-to-table, raw denim aesthetic synth nesciunt you probably
+                haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-link collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Is there needed anything except passport to book the room?
+                </button>
+              </h5>
+            </div>
+            <div
+              id="collapseTwo"
+              class="collapse"
+              aria-labelledby="headingTwo"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life
+                accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                non cupidatat skateboard dolor brunch. Food truck quinoa
+                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                excepteur butcher vice lomo. Leggings occaecat craft beer
+                farm-to-table, raw denim aesthetic synth nesciunt you probably
+                haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-link collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Can I refund my tickets?
+                </button>
+              </h5>
+            </div>
+            <div
+              id="collapseThree"
+              class="collapse"
+              aria-labelledby="headingThree"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life
+                accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                non cupidatat skateboard dolor brunch. Food truck quinoa
+                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                excepteur butcher vice lomo. Leggings occaecat craft beer
+                farm-to-table, raw denim aesthetic synth nesciunt you probably
+                haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="about-us"
+      class="about-us d-flex align-items-center flex-column mb-4"
+    >
+      <div id="about" class="about-us-wrapper col-lg-9">
+        <img src="images/aboutUs.jpg" alt="hotel" style="width: 100%" />
+        <div class="row centered">
+          <div>
+            <h2>About Hotel.com</h2>
+            <br />
+            <h4>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </h4>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+              minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat.
+            </p>
+            <br /><button class="btn btn-warning">Get in Touch</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="footer" class="footer d-flex align-items-center flex-column">
       <div class="footer-wrap col-lg-9">
         <div class="container">
           <div class="row">
